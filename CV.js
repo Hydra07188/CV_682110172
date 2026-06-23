@@ -51,6 +51,12 @@ window.addEventListener("scroll", () => {
     updateActiveLink();
 });
 
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 920) {
+        closeMobileMenu();
+    }
+});
+
 contactForm?.addEventListener("submit", (event) => {
     event.preventDefault();
     contactForm.reset();
